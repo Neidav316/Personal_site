@@ -1,0 +1,150 @@
+
+
+div{
+    padding: 100px;
+}
+body{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    background: linear-gradient(100deg, #010210, #080e38, #0f146d);
+    color: white;
+}
+
+.header-container{
+    top: 10px;
+    flex-shrink: 1;
+}
+
+.header-background{
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: 500px;
+    
+    background-image: url("./assets/images/background_image_3.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    border-radius: 100px;
+
+    align-items: center;
+    
+}
+
+.header-container  h1{
+    letter-spacing: 2px;
+}
+
+.header-text-box{
+
+    background-color: rgba(37, 45, 111, 0.300);
+    border-radius: 25%;
+    width: 270px;
+    margin: 10px;
+}
+
+
+
+.profile-img{
+    width: 200px;
+    border: 2px solid rgb(1, 1, 43);
+    border-radius: 50%;
+}
+.contact-container{
+    background-color: #010210;
+}
+.showcase-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px ;
+    grid-auto-rows: auto;
+    grid-auto-columns: 1fr 1fr;
+}
+.first{
+    grid-column: span 2;
+}
+.project-card{
+    background-color: #0f146d;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    
+
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.btn{
+    border: 3px solid lightgray;
+    border-radius: 20%;
+    padding: 5px;
+    
+}
+.project-img{
+    border-radius: 25%;
+    margin: 10px;
+    object-fit: cover;
+    
+}
+.white{
+    background-color: white;
+
+}
+.link{
+    text-decoration-line: none;
+    width: 100px;
+
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  0 20%;
+    float: none;
+}
+.about-container > *{
+
+
+    margin: 10px;
+    text-align: center;
+    
+}
+.footer-container{
+    display: flex;
+    padding: 10px 30px;
+    position: static;
+    bottom: 0;
+    width: 100%;    
+    background-color: #010210;
+}
+#list-skills{
+    list-style-type: none;
+
+}
+#list-skills > li{
+    text-align: left;
+    margin-bottom: 10px;
+}
+@media (max-width: 1000px){
+    .header-background{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+
+    }
+    .project-card{
+        grid-column: span 2;
+    }
+    .about-container > p 
+    {
+        width: 600px;
+        margin-left: 25% ;
+
+    }
+}
