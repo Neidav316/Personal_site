@@ -1,8 +1,9 @@
 
 
 div{
-    padding: 100px;
+    padding: 30px 100px ;
 }
+
 body{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -43,7 +44,22 @@ body{
     margin: 10px;
 }
 
+.list-container{
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    padding:0;     
+}
+#list-skills{
+    list-style-type: none;
+    padding:0;
 
+}
+#list-skills > li{
+    margin: 0 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
 
 .profile-img{
     width: 200px;
@@ -88,6 +104,7 @@ body{
     border-radius: 25%;
     margin: 10px;
     object-fit: cover;
+    border: 4px solid cornflowerblue;
     
 }
 .white{
@@ -117,20 +134,16 @@ body{
 }
 .footer-container{
     display: flex;
-    padding: 10px 30px;
+    padding: 10px 0px;
     position: static;
     bottom: 0;
     width: 100%;    
     background-color: #010210;
 }
-#list-skills{
-    list-style-type: none;
+.footer-container > *{
+    padding: 0px 20px
+}
 
-}
-#list-skills > li{
-    text-align: left;
-    margin-bottom: 10px;
-}
 @media (max-width: 1000px){
     .header-background{
         display: flex;
