@@ -163,7 +163,7 @@ body{
 
     }
     .header-text-box{
-        margin: 10px;
+        margin: auto;
     }
     .project-card{
         grid-column: span 2;
